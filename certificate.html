@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Certificates and achievements">
+    <meta name="title" content="Certificates">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <title>Certificates</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="certificate.css">
+    <style>
+        /* ==========================================
+           DESKTOP VIEW (Screens wider than 768px)
+           ========================================== */
+        @media (min-width: 769px) {
+            .portfolio-item {
+                display: flex !important;
+                align-items: center !important;
+                gap: 48px !important; /* Healthy breathing room between text and image */
+            }
+            
+            /* Enforce standard size on desktop without shrinking */
+            .portfolio-item__image-wrapper {
+                flex: 0 0 568px !important; 
+                width: 568px !important;
+                height: 320px !important;
+                overflow: hidden;
+            }
+        }
+
+        /* ==========================================
+           MOBILE & TABLET VIEW (Screens 768px and down)
+           ========================================== */
+        @media (max-width: 768px) {
+            .portfolio-item {
+                display: flex !important;
+                flex-direction: column !important; /* Stacks image on top of text */
+                gap: 24px !important; /* Space between the image and text blocks */
+                margin-bottom: 48px !important; /* Space between each project card */
+                padding: 0 16px !important; /* Prevents text from hitting the screen edges */
+            }
+
+            /* Flips the visual order for right-aligned items so layout is consistent on mobile */
+            .portfolio-item--right {
+                flex-direction: column !important; 
+            }
+
+            .portfolio-item__image-wrapper {
+                width: 100% !important;
+                /* Maintains the exact 568:320 (16:9 approx) aspect ratio safely on small screens */
+                aspect-ratio: 568 / 320 !important; 
+                height: auto !important;
+                max-width: 568px !important; /* Ensures it never stretches larger than standard size */
+                margin: 0 auto !important; /* Centers the certificate image horizontally */
+                overflow: hidden;
+            }
+            
+            .portfolio-item__content {
+                width: 100% !important;
+                text-align: left !important; /* Clean alignment for easy reading on phones */
+            }
+        }
+
+        /* ==========================================
+           GLOBAL IMAGE RULES (Applies to all screens)
+           ========================================== */
+        .portfolio-item__image {
+            width: 100% !important;
+            height: 100% !important;
+            object-fit: cover !important; 
+            display: block !important;
+        }
+    </style>
+    
+</head>
+<body>
+    <header class="header" id="header">
+        <nav class="nav">
+            <div class="nav__left">
+                <a href="index.html#home" class="nav__link">Home</a>
+                <a href="index.html#about" class="nav__link">About me</a>
+            </div>
+            <a href="index.html" class="nav__logo">
+                <img src="assets/logo.png" alt="S Logo" class="nav__logo-img">
+            </a>
+            <div class="nav__right">
+                <a href="index.html#work" class="nav__link">Work</a>
+                <a href="index.html#contact" class="nav__link">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <section class="certificates-section">
+        <div class="certificates-container">
+            <div class="gradient-blur gradient-blur--1"></div>
+            <div class="gradient-blur gradient-blur--2"></div>
+            <div class="gradient-blur gradient-blur--3"></div>
+            <div class="gradient-blur gradient-blur--4"></div>
+            <div class="gradient-blur gradient-blur--5"></div>
+            <article class="portfolio-item portfolio-item--left">
+                <div class="portfolio-item__image-wrapper">
+                    <img src="/Users/anvibansal/portfolio_anvi/assets/cpt.jpeg" alt="Project" class="portfolio-item__image" width="568" height="320">
+                </div>
+                <div class="portfolio-item__content">
+                    <div class="portfolio-item__badge">Cisco Networking Academy</div>
+                    <h3 class="portfolio-item__title">Getting started with Cisco Packet Tracer</h3>
+                    <p class="portfolio-item__description">
+A Cisco Networking Academy certificate in network simulation. Validates skills in building virtual topologies, configuring routers and switches, and using Simulation Mode to track packets and troubleshoot network issues.                    </p>
+                    <div class="portfolio-item__actions">
+                        <button class="action-icon" aria-label="View project"></button>
+                    </div>
+                </div>
+            </article>
+            <article class="portfolio-item portfolio-item--right">
+                <div class="portfolio-item__image-wrapper">
+                    <img src="/Users/anvibansal/portfolio_anvi/assets/python.jpeg" alt="Project" class="portfolio-item__image"; width="568" height="320">
+                </div>
+                <div class="portfolio-item__content">
+                    <div class="portfolio-item__badge">Cisco Networking Academy</div>
+                    <h3 class="portfolio-item__title">Python Essentials 1</h3>
+                    <p class="portfolio-item__description">
+A Cisco Networking Academy certificate in foundational Python programming. Validates skills in core coding concepts, data types, control flow, and functions, while focusing on algorithmic thinking and real-world problem-solving.                    </p>
+                    <div class="portfolio-item__actions">
+                        <button class="action-icon" aria-label="View project"></button>
+                    </div>
+                </div>
+            </article>
+            <article class="portfolio-item portfolio-item--left">
+                <div class="portfolio-item__image-wrapper">
+                    <img src="/Users/anvibansal/portfolio_anvi/assets/CERTIFICATE_LANDING_PAGE~5TMU4GMS9XFF.jpeg" alt="Project" class="portfolio-item__image" width="568" height="320">
+                </div>
+                <div class="portfolio-item__content">
+                    <div class="portfolio-item__badge">Google</div>
+                    <h3 class="portfolio-item__title">UX Design Professional</h3>
+                    <p class="portfolio-item__description">
+A Google professional certificate in user experience (UX) design. Validates skills in the end-to-end design process, including user research, wireframing, prototyping, and conducting usability studies using tools like Figma.                    </p>
+                    <div class="portfolio-item__actions">
+                        <button class="action-icon" aria-label="View project"></button>
+                    </div>
+                </div>
+            </article>
+            <article class="portfolio-item portfolio-item--right">
+                <div class="portfolio-item__image-wrapper">
+                    <img src="/Users/anvibansal/portfolio_anvi/assets/CERTIFICATE_LANDING_PAGE~I80QFANW91PR.jpeg" alt="Project" class="portfolio-item__image" width="568" height="320">
+                </div>
+                <div class="portfolio-item__content">
+                    <div class="portfolio-item__badge">Google</div>
+                    <h3 class="portfolio-item__title">Build dynamic User Interfaces for websites</h3>
+                    <p class="portfolio-item__description">
+A Google course certificate in front-end web development. Validates skills in creating dynamic, responsive user interfaces, implementing interactive elements, and optimizing the digital user experience for modern websites.                    </p>
+                    <div class="portfolio-item__actions">
+                        <button class="action-icon" aria-label="View project"></button>
+                    </div>
+                </div>
+            </article>
+            <article class="portfolio-item portfolio-item--left">
+                <div class="portfolio-item__image-wrapper">
+                    <img src="/Users/anvibansal/portfolio_anvi/assets/CERTIFICATE_LANDING_PAGE~E7TJS7E75JEO.jpeg" alt="Project" class="portfolio-item__image" width="568" height="320">
+                </div>
+                <div class="portfolio-item__content">
+                    <div class="portfolio-item__badge">Google</div>
+                    <h3 class="portfolio-item__title">Accelerate your Job search with AI</h3>
+                    <p class="portfolio-item__description">
+A Google course certificate in AI-powered career strategies. Validates skills in leveraging artificial intelligence tools to optimize resumes, streamline job hunts, and enhance interview preparation for the modern professional landscape.                    </p>
+                    <div class="portfolio-item__actions">
+                        <button class="action-icon" aria-label="View project"></button>
+                    </div>
+                </div>
+            </article>
+            <article class="portfolio-item portfolio-item--right">
+                <div class="portfolio-item__image-wrapper">
+                    <img src="/Users/anvibansal/portfolio_anvi/assets/CERTIFICATE_LANDING_PAGE~45SNWSULX402.jpeg" alt="Project" class="portfolio-item__image" width="568" height="320">
+                </div>
+                <div class="portfolio-item__content">
+                    <div class="portfolio-item__badge">Google</div>
+                    <h3 class="portfolio-item__title">Create High-Fidelity Designs and Prototypes in
+Figma</h3>
+                    <p class="portfolio-item__description">
+A Google course certificate in advanced UI/UX development. Validates skills in creating high-fidelity visual designs, building interactive prototypes in Figma, and applying advanced design systems to deliver production-ready digital assets.                    </p>
+                    <div class="portfolio-item__actions">
+                        <button class="action-icon" aria-label="View project"></button>
+                    </div>
+                </div>
+            </article>
+            <article class="portfolio-item portfolio-item--left">
+                <div class="portfolio-item__image-wrapper">
+                    <img src="/Users/anvibansal/portfolio_anvi/assets/CERTIFICATE_LANDING_PAGE~U0Q2WHIFHXAA.jpeg" alt="Project" class="portfolio-item__image" width="568" height="320">
+                </div>
+                <div class="portfolio-item__content">
+                    <div class="portfolio-item__badge">Google</div>
+                    <h3 class="portfolio-item__title">Start the UX Design Process: Empathize, Define, and Ideate</h3>
+                    <p class="portfolio-item__description">
+A Google course certificate in foundational UX design methodologies. Validates skills in the initial stages of user-centered design, specifically empathizing with users through research, defining clear problem statements, and brainstorming innovative design ideas.                    </p>
+                    <div class="portfolio-item__actions">
+                        <button class="action-icon" aria-label="View project"></button>
+                    </div>
+                </div>
+            </article>
+            <article class="portfolio-item portfolio-item--right">
+                <div class="portfolio-item__image-wrapper">
+                    <img src="/Users/anvibansal/portfolio_anvi/assets/CERTIFICATE_LANDING_PAGE~PWKC8GOLVSML.jpeg" alt="Project" class="portfolio-item__image" width="568" height="320">
+                </div>
+                <div class="portfolio-item__content">
+                    <div class="portfolio-item__badge">Google</div>
+                    <h3 class="portfolio-item__title">Build Wireframes and Low-Fidelity Prototypes</h3>
+                    <p class="portfolio-item__description">
+A Google course certificate in practical UX design execution. Validates skills in developing storyboards, creating paper and digital wireframes, and building low-fidelity prototypes to effectively map out and test user flows.                    </p>
+                    <div class="portfolio-item__actions">
+                        <button class="action-icon" aria-label="View project"></button>
+                    </div>
+                </div>
+            </article>
+            <article class="portfolio-item portfolio-item--left">
+                <div class="portfolio-item__image-wrapper">
+                    <img src="/Users/anvibansal/portfolio_anvi/assets/CERTIFICATE_LANDING_PAGE~LACQLE7X6C6E.jpeg" alt="Project" class="portfolio-item__image" width="568" height="320">
+                </div>
+                <div class="portfolio-item__content">
+                    <div class="portfolio-item__badge">Google</div>
+                    <h3 class="portfolio-item__title">Design a User Experience for social good & Prepare for Jobs</h3>
+                    <p class="portfolio-item__description">
+A Google course certificate in social impact UX design and career readiness. Validates skills in applying user-centered design principles to public-interest projects, building a professional portfolio, and preparing for entry-level industry roles.                    </p>
+                    <div class="portfolio-item__actions">
+                        <button class="action-icon" aria-label="View project"></button>
+                    </div>
+                </div>
+            </article>
+            <article class="portfolio-item portfolio-item--right">
+                <div class="portfolio-item__image-wrapper">
+                    <img src="/Users/anvibansal/portfolio_anvi/assets/CERTIFICATE_LANDING_PAGE~KRY5AAU1CY9C.jpeg" alt="Project" class="portfolio-item__image" width="568" height="320">
+                </div>
+                <div class="portfolio-item__content">
+                    <div class="portfolio-item__badge">Google</div>
+                    <h3 class="portfolio-item__title">Conduct UX Research and Test Early Concepts</h3>
+                    <p class="portfolio-item__description">A Google course certificate in user research and evaluation methods. Validates skills in planning and conducting UX research studies, gathering actionable user feedback, and testing early-stage design concepts to guide data-driven product decisions.                    </p>
+                    <div class="portfolio-item__actions">
+                        <button class="action-icon" aria-label="View project"></button>
+                    </div>
+                </div>
+            </article>
+            <article class="portfolio-item portfolio-item--left">
+                <div class="portfolio-item__image-wrapper">
+                    <img src="/Users/anvibansal/portfolio_anvi/assets/CERTIFICATE_LANDING_PAGE~KI09J6SAXQ2Q.jpeg" alt="Project" class="portfolio-item__image" width="568" height="320">
+                </div>
+                <div class="portfolio-item__content">
+                    <div class="portfolio-item__badge">Google</div>
+                    <h3 class="portfolio-item__title">Foundation of User Experience (UX) Design</h3>
+                    <p class="portfolio-item__description">
+A Google course certificate in foundational UX design. Validates skills in core user experience concepts, design thinking frameworks, accessibility principles, and understanding the role of a UX designer within cross-functional product teams.                    </p>
+                    <div class="portfolio-item__actions">
+                        <button class="action-icon" aria-label="View project"></button>
+                    </div>
+                </div>
+            </article>
+            <article class="portfolio-item portfolio-item--right">
+                <div class="portfolio-item__image-wrapper">
+                    <img src="/Users/anvibansal/portfolio_anvi/assets/gdg.jpeg" alt="Project" class="portfolio-item__image" width="568" height="320">
+                </div>
+                <div class="portfolio-item__content">
+                    <div class="portfolio-item__badge">Google Developer Groups</div>
+                    <h3 class="portfolio-item__title">Certificate of Achievenment</h3>
+                    <p class="portfolio-item__description">
+A Google Developer Groups (GDG) On Campus certificate of achievement for the Solution Challenge. Validates initiative in leveraging AI technologies to propose innovative solutions for real-world problems and contributing to community-driven social impact.                    </p>
+                    <div class="portfolio-item__actions">
+                        <button class="action-icon" aria-label="View project"></button>
+                    </div>
+                </div>
+            </article>
+            <article class="portfolio-item portfolio-item--left">
+                <div class="portfolio-item__image-wrapper">
+                    <img src="/Users/anvibansal/portfolio_anvi/assets/oracle.jpeg" alt="Project" class="portfolio-item__image" width="568" height="320">
+                </div>
+                <div class="portfolio-item__content">
+                    <div class="portfolio-item__badge">Oracle</div>
+                    <h3 class="portfolio-item__title">Certified Foundations Associate</h3>
+                    <p class="portfolio-item__description">
+An Oracle University industry certification in foundational Java programming. Validates skills in core Java concepts, object-oriented programming principles, variables, control flow, and the fundamental coding structures required to build robust software applications.                    </p>
+                    <div class="portfolio-item__actions">
+                        <button class="action-icon" aria-label="View project"></button>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </section>
+</body>
+</html>
